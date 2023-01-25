@@ -29,10 +29,10 @@ public:
 	}
 
 	void print() {
-		cout << "(" << getFirst() << "," << getSecond() << ")" << endl;
+		cout << "(" << getFirst() << "," << getSecond() << ")";
 	}
 	 
-	friend ostream& operator << (ostream& out, const Pair<T1, T2>& pair) {
+	friend ostream& operator << (ostream& out, Pair<T1, T2>& pair) {
 		pair.print();
 		return out;
 	}

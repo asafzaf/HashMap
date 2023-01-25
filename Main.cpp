@@ -11,5 +11,7 @@ int main() {
 	hashy.Put(z, x);
 	hashy.Put(w, z);
 	hashy.Put(x, z);
+	ff.print();
+	cout <<endl << "Printing vector:" << endl << hashy;
 	return 0;
 }
