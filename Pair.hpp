@@ -31,7 +31,7 @@ public:
 	void print() { // Print an array.
 		cout << "(" << getFirst() << "," << getSecond() << ")";
 	}
-	 
+
 	friend ostream& operator << (ostream& out, Pair<T1, T2>& pair) { // Out operator.
 		pair.print();
 		return out;

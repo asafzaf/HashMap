@@ -127,10 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="CustomExceptions.h" />
-    <ClInclude Include="HashMap.h" />
-    <ClInclude Include="OverFlowSizeCheck.h" />
-    <ClInclude Include="Pair.h" />
+    <ClInclude Include="CustomExceptions.hpp" />
+    <ClInclude Include="HashMap.hpp" />
+    <ClInclude Include="OverFlowSizeCheck.hpp" />
+    <ClInclude Include="Pair.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CustomExceptions.cpp" />

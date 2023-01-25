@@ -1,7 +1,7 @@
 #pragma once
-#include "Pair.h"
-#include "OverFlowSizeCheck.h"
-#include "CustomExceptions.h"
+#include "Pair.hpp"
+#include "OverFlowSizeCheck.hpp"
+#include "CustomExceptions.hpp"
 #include <vector>
 
 using namespace std;

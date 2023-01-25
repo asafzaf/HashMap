@@ -15,16 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="HashMap.h">
+    <ClInclude Include="Pair.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Pair.h">
+    <ClInclude Include="OverFlowSizeCheck.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="OverFlowSizeCheck.h">
+    <ClInclude Include="HashMap.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CustomExceptions.h">
+    <ClInclude Include="CustomExceptions.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

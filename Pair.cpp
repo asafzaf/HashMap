@@ -1,4 +1,4 @@
-#include "Pair.h"
+#include "Pair.hpp"
 
 using namespace std;
 

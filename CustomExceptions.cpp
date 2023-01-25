@@ -1,4 +1,4 @@
-#include "CustomExceptions.h"
+#include "CustomExceptions.hpp"
 
 CustomExceptions::CustomExceptions() {
 
