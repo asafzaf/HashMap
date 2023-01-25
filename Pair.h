@@ -20,7 +20,7 @@ public:
 
 	Pair() {}
 
-	template<class T1, class T2> Pair<T1, T2>& operator = (const Pair<T1, T2>& pair) {
+	template<class T1, class T2> Pair<T1, T2>& operator = (const Pair<T1, T2>& pair) { // Assign operator to Pair.
 		if (this == &pair) {
 			return *this;
 		}
@@ -28,16 +28,16 @@ public:
 		return *temp;
 	}
 
-	void print() {
+	void print() { // Print an array.
 		cout << "(" << getFirst() << "," << getSecond() << ")";
 	}
 	 
-	friend ostream& operator << (ostream& out, Pair<T1, T2>& pair) {
+	friend ostream& operator << (ostream& out, Pair<T1, T2>& pair) { // Out operator.
 		pair.print();
 		return out;
 	}
 
-	friend istream& operator >> (istream& in, const pair<T1, T2>& pair) {
+	friend istream& operator >> (istream& in, const pair<T1, T2>& pair) { // In operator.
 		in >> pair.first >> pair.second;
 		return in;
 	}

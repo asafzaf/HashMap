@@ -8,8 +8,9 @@ protected:
 	int m_size;
 
 public:
-	OverFlowSizeCheck(int size);
-	bool legal(int num) {
+	OverFlowSizeCheck(int size); 
+
+	bool legal(int num) { // Checing if the size is legal.
 		if (num < 0 || num > m_size - 1) {
 			return false;
 		}

@@ -18,7 +18,7 @@ private:
 public:
 	HashMap(int size) : OverFlowSizeCheck(size) {}
 
-	void Put(K& key, V& value) {
+	void Put(K& key, V& value) { // Put new pair in vector.
 		if (Contains(key)) {
 			//throw "Key is already here!";
 			return;
@@ -31,7 +31,7 @@ public:
 		m_items.push_back(pair);
 	}
 
-	bool Contains(K& key) {
+	bool Contains(K& key) { // Checking if there is such a key.
 		vector<Pair<K, V>> temp = getItems();
 		for (int i = 0; i < m_items.size(); i++) {
 			Pair<K, V> pair = temp.at(i);
@@ -41,7 +41,7 @@ public:
 		return false;
 	}
 
-	V operator[](K& key) {
+	V operator[](K& key) { // Return the Value from Key.
 		vector<Pair<K, V>> temp = getItems();
 		for (int i = 0; i < m_items.size(); i++) {
 			Pair<K, V> pair = temp.at(i);
@@ -51,7 +51,7 @@ public:
 		return "Key doesn't exist!";
 	}
 
-	friend ostream& operator<<(ostream& out, HashMap<K, V>& hashmap) {
+	friend ostream& operator<<(ostream& out, HashMap<K, V>& hashmap) { // Out operator for vector - each object by line.
 		vector<Pair<K, V>> temp = hashmap.getItems();
 		for (auto i = temp.begin(); i != temp.end(); i++) {
 			cout << *i << endl;
