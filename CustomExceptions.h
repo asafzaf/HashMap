@@ -4,10 +4,10 @@
 
 //---      CustomExceptions.h      ---//
 
-class CustomExceptions : public _exception {
+class CustomExceptions {
 public:
-	int InvalidIndex();
-	int InvalidKey();
+	char* InvalidIndex();
+	char* InvalidKey();
 
 	CustomExceptions();
 };

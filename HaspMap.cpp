@@ -2,6 +2,11 @@
 
 using namespace std;
 
-HashMap<class K, class V>::HashMap(int size) : OverFlowSizeCheck(size) {
+//template<class K, class V>
+//HashMap<K, V>::HashMap(int size) : OverFlowSizeCheck(size) {
+//	m_items.begin();
+//}
 
-}
+//ostream& operator<<(ostream& ostream, const HashMap<K, V>& hashmap) {
+//
+//}

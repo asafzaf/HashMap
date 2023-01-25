@@ -135,6 +135,7 @@
   <ItemGroup>
     <ClCompile Include="CustomExceptions.cpp" />
     <ClCompile Include="HaspMap.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="OverFlowSizeCheck.cpp" />
     <ClCompile Include="Pair.cpp" />
   </ItemGroup>

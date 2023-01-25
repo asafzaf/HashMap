@@ -9,7 +9,12 @@ protected:
 
 public:
 	OverFlowSizeCheck(int size);
-	bool legal(int num);
+	bool legal(int num) {
+		if (num < 0 || num > m_size - 1) {
+			return false;
+		}
+		else return true;
+	}
 
 	int getSize() { return m_size; }
 	void setSize(int size) { m_size = size; }
