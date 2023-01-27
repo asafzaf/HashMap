@@ -16,11 +16,11 @@ private:
 	vector <Pair< K, V> > m_items;
 
 public:
-	HashMap(int size) : OverFlowSizeCheck(size) {}
+	HashMap(int size) : OverFlowSizeCheck(size) {};
 
 	void Put(K& key, V& value) { // Put new pair in vector.
 		if (Contains(key)) {
-			//throw "Key is already here!";
+			throw InvalidKey("Key is already here!");
 			return;
 		}
 		else if (!legal(m_items.size())) {
