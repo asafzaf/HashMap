@@ -1,13 +1,12 @@
 #pragma once
 #include <exception>
+#include <string>
 // This project made by Asaf Zafrir - 205929029
 
 //---      CustomExceptions.h      ---//
 
-class CustomExceptions {
-public:
-	char* InvalidIndex();
-	char* InvalidKey();
+class CustomExceptions : public _exception {};
 
-	CustomExceptions();
-};
+class InvaildIndex : public CustomExceptions {};
+
+class InvalidKey : public CustomExceptions {};

@@ -5,6 +5,7 @@ using namespace std;
 
 int main() {
 	try {
+
 		HashMap<int, int> hashy(3);
 		int x = 5, y = 7, z = 1, w = 3;
 		Pair<int, int> ff(x, y);
@@ -18,12 +19,14 @@ int main() {
 	}
 	catch (const InvaildIndex)
 	{
-		cout << "Invalid Index!";
+		cout << "Inavlid Index!";
 	}
 	catch (const InvalidKey)
 	{
-		cout << "Invalid key!";
+		cout << "Inavlid key!";
 
 	}
+
+
 	return 0;
 }

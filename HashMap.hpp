@@ -20,9 +20,7 @@ public:
 
 	void Put(K& key, V& value) { // Put new pair in vector.
 		if (Contains(key)) {
-			throw InvalidKey("Key is already here!");
-			return;
-		}
+			throw InvalidKey(); 		}
 		else if (!legal(m_items.size())) {
 			//throw "No space!";
 			return;
