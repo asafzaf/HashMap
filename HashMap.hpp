@@ -8,7 +8,7 @@ using namespace std;
 
 // This project made by Asaf Zafrir - 205929029
 
-//---      HashMap.h      ---//
+//---      HashMap.hpp      ---//
 
 template<class K, class V>
 class HashMap : public OverFlowSizeCheck {
@@ -58,6 +58,7 @@ public:
 		return out;
 	}
 
+	//--- Get's & Set's ---//
 	vector<Pair<K, V>> getItems() { return m_items; }
 	void setItems(vector<Pair<K, V>> items) { m_items = items; }
 };

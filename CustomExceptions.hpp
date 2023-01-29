@@ -1,9 +1,10 @@
 #pragma once
 #include <exception>
 #include <string>
+
 // This project made by Asaf Zafrir - 205929029
 
-//---      CustomExceptions.h      ---//
+//---      CustomExceptions.hpp      ---//
 
 class CustomExceptions : public _exception {};
 

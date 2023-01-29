@@ -1,7 +1,8 @@
 #pragma once
+
 // This project made by Asaf Zafrir - 205929029
 
-//---      OverFlowSizeCheck.h      ---//
+//---      OverFlowSizeCheck.hpp      ---//
 
 class OverFlowSizeCheck {
 protected:
@@ -17,6 +18,7 @@ public:
 		else return true;
 	}
 
+	//--- Get's & Set's ---//
 	int getSize() { return m_size; }
 	void setSize(int size) { m_size = size; }
 };

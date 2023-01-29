@@ -5,7 +5,8 @@ using namespace std;
 
 // This project made by Asaf Zafrir - 205929029
 
-//---      Pair.h      ---//
+//---      Pair.hpp      ---//
+
 template<class T1, class T2>
 class Pair {
 private:
@@ -42,6 +43,7 @@ public:
 		return in;
 	}
 
+	//--- Get's & Set's ---//
 	T1& getFirst() { return m_first; }
 	void setFirst(T1 first) { m_first = first; }
 
